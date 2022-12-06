@@ -1,12 +1,9 @@
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <div class="login-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Username" name="username">
-      <input type="text" placeholder="Password" name="psw">
-      <button type="submit">Login</button>
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+  <div class="overlay-content">
+    <form action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
 </div>
