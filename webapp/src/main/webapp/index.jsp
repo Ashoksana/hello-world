@@ -1,18 +1,18 @@
-<form action="action_page.php">
-  <div class="container">
-    <h2>Subscribe to our Newsletter</h2>
-    <p>Lorem ipsum..</p>
-  </div>
+<!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Open Form</button>
 
-  <div class="container" style="background-color:white">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
-    <label>
-      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-    </label>
-  </div>
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
 
-  <div class="container">
-    <input type="submit" value="Subscribe">
-  </div>
-</form>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
