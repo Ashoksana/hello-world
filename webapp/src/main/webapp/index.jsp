@@ -1,9 +1,10 @@
-<div id="myOverlay" class="overlay">
-  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
-  <div class="overlay-content">
-    <form action="action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</div>
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
